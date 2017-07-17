@@ -1,0 +1,29 @@
+<form>
+{{input type="text" id="textfield" value=disparea}}
+<table>
+	<tr>
+      <td><button type="submit" {{action "pushOpcode" "1"}}>1</button></td>
+      <td><button type="submit" {{action "pushOpcode" "2"}}>2</button></td>
+      <td><button type="submit" {{action "pushOpcode" "3"}}>3</button></td>
+      <td><button type="submit" {{action "pushOpcode" "+"}}>+</button></td>
+    </tr>
+    <tr>
+      <td><button type="submit" {{action "pushOpcode" "4"}}>4</button></td>
+      <td><button type="submit" {{action "pushOpcode" "5"}}>5</button></td>
+      <td><button type="submit" {{action "pushOpcode" "6"}}>6</button></td>
+      <td><button type="submit" {{action "pushOpcode" "-"}}>-</button></td>
+    </tr>
+    <tr>
+      <td><button type="submit" {{action "pushOpcode" "7"}}>7</button></td>
+      <td><button type="submit" {{action "pushOpcode" "8"}}>8</button></td>
+      <td><button type="submit" {{action "pushOpcode" "9"}}>9</button></td>
+      <td><button type="submit" {{action "pushOpcode" "*"}}>X</button></td>
+    </tr>
+    <tr>
+      <td><button type="submit" {{action "clearAll"}}>C</button></td>
+      <td><button type="submit" {{action "pushOpcode" "0"}}>0</button></td>
+      <td><button type="submit" {{action "performCalculation"}}>=</button></td>
+      <td><button type="submit" {{action "pushOpcode" "/"}}>/</button></td>
+    </tr>
+</table>
+</form>
